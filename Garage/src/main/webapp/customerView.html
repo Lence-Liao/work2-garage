@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>customers</title>
+	<style>
+		body {background-color:#41d7b4;font-size:20px}
+		button {width:80px;height:40px;font-size:15px;}
+		input {width:80px;}
+	</style>
+</head>
+<body>
+	<h1 style ="text-align:center;">客戶資料系統</h1>
+	
+	<h2 style ="text-align:center;">查詢客戶資料</h2>
+	
+	<form style ="text-align:center;" action="searchCustomer.jsp" method="post">		
+		<button style="height: 60px">查詢全部客戶資料</button>	
+	</form>
+	<hr>
+	<h2 style ="text-align:center;">新增客戶資料</h2>
+	<br>
+	<form style ="text-align:center;" action="insertCustomer.jsp" method="post">
+		客戶編號:<input type="text" name="id">
+		客戶姓名:<input type="text" name="name">
+		日期:<input type="text" name="date">
+		電話:<input type="text" name="phone">
+		車牌號碼:<input type="text" name="carNumber">
+		車子品牌:<input type="text" name="type">
+		里程數:<input type="text" name="mil">	
+		<button>存檔</button>	
+	</form><br><hr>
+	
+	<h2 style ="text-align:center;">刪除客戶資料</h2>
+	<br>
+	<form style ="text-align:center;" action="deleteCustomer.jsp" method="post">
+		客戶編號:<input type="text" name="id">		
+		<button>確定刪除</button>	
+	</form><br><hr>
+	<h2 style ="text-align:center;">更新客戶資料</h2>
+	<br>
+	<form style ="text-align:center;" action="updateCustomer.jsp" method="post">
+		客戶編號:<input type="text" name="id">
+		客戶姓名:<input type="text" name="name">
+		日期:<input type="text" name="date">
+		電話:<input type="text" name="phone">
+		車牌號碼:<input type="text" name="carNumber">
+		車子品牌:<input type="text" name="type">
+		里程數:<input type="text" name="mil">	
+		<button>存檔</button>	
+	</form><br><hr>
+	
+</body>
+</html>
